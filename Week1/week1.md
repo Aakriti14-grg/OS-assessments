@@ -103,9 +103,12 @@ Secure inter-VM and host-to-VM communication
 This configuration enhances security by isolating the lab environment from external threats while allowing controlled internal communication.
 
 IP Addressing Scheme
-System	Role	IP Address	Interface
-Server VM	Service host	192.168.56.10	enp0s3
-Workstation VM	Client / Admin	192.168.56.11	enp0s3
+| System | Role | IP Address | Interface |
+|-------|------|------------|-----------|
+| Server VM | Service host | 192.168.56.10 | enp0s3 |
+| Workstation VM | Client / Admin | 192.168.56.11 | enp0s3 |
+
+
 6. System Specification Documentation (CLI Evidence)
 
 System specifications were gathered using standard Linux command-line utilities.
