@@ -31,11 +31,13 @@ Chosen Distribution: Ubuntu 22.04 LTS (Server VM)
 Ubuntu 22.04 LTS was selected for the Server VM after comparing major Linux distribution families based on release model, stability, maintenance requirements, and package management.
 
 Comparison of Linux Distribution Families
-Feature	Debian Family (Ubuntu LTS)	Red Hat Family (RHEL, Fedora)	SUSE Family	Arch Family
-Release Model	Fixed (LTS)	Fixed	Fixed / Rolling	Rolling
-Package Manager	APT	DNF / YUM	Zypper	Pacman
-Stability	High	High	High	Low
-Maintenance	Low	Medium	Medium	High
+| Feature         | Debian Family (Ubuntu LTS) | Red Hat Family (RHEL, Fedora) | SUSE Family     | Arch Family |
+|-----------------|----------------------------|-------------------------------|-----------------|-------------|
+| Release Model   | Fixed (LTS)                | Fixed                         | Fixed / Rolling | Rolling     |
+| Package Manager | APT                        | DNF / YUM                     | Zypper          | Pacman      |
+| Stability       | High                       | High                          | High            | Low         |
+| Maintenance     | Low                        | Medium                        | Medium          | High        |
+
 
 Ubuntu 22.04 LTS provides long-term stability, predictable updates, and extensive community documentation, making it suitable for a server environment.
 
