@@ -32,7 +32,7 @@ To evaluate system performance comprehensively, workloads are categorised based 
 
 This categorisation ensures balanced system evaluation.
 
-3️⃣ Selected Applications and Tools
+## 3️⃣ Selected Applications and Tools
 
 The following tools were selected based on reliability, industry usage, and suitability for controlled testing.
 
@@ -50,23 +50,23 @@ These tools collectively allow focused testing of individual subsystems as well 
 
 **CPU and Memory Testing**
 
-stress-ng was selected due to its fine-grained workload control and ability to target specific system components. It enables reproducible CPU and memory stress scenarios while maintaining predictable execution.
+'stress-ng' was selected due to its fine-grained workload control and ability to target specific system components. It enables reproducible CPU and memory stress scenarios while maintaining predictable execution.
 
 **Storage Performance Testing**
 
-fio is widely used for storage benchmarking and allows flexible configuration of read/write patterns, block sizes, and concurrency levels, making it suitable for realistic disk performance evaluation.
+'fio' is widely used for storage benchmarking and allows flexible configuration of read/write patterns, block sizes, and concurrency levels, making it suitable for realistic disk performance evaluation.
 
 **Network Performance Testing**
 
-iperf3 provides accurate measurement of network throughput and is commonly used in enterprise environments. It allows direct performance testing between the Server and Workstation virtual machines.
+'iperf3' provides accurate measurement of network throughput and is commonly used in enterprise environments. It allows direct performance testing between the Server and Workstation virtual machines.
 
 **Application-Level Testing**
 
-nginx was selected as a lightweight and widely deployed web server. It represents a realistic server workload that combines CPU usage, memory allocation, disk access, and network communication.
+'nginx' was selected as a lightweight and widely deployed web server. It represents a realistic server workload that combines CPU usage, memory allocation, disk access, and network communication.
 
 ## 5️⃣ Testing Scope and Methodology Alignment
 
-At this stage, no performance testing is executed. The focus remains on:
+At this stage, no performance testing is executed at this stage. The focus remains on:
 
 - Tool selection and justification
 
