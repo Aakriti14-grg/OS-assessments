@@ -6,9 +6,9 @@ This journal entry documents the planning and design of a virtualised operating 
 
 The environment is designed using Oracle VirtualBox and consists of two virtual machines:
 
-A Server Virtual Machine
+- A Server Virtual Machine
 
-A Workstation Virtual Machine
+- A Workstation Virtual Machine
 
 ## 1️⃣ System Architecture Overview
 
@@ -28,7 +28,7 @@ Figure 1: System architecture diagram illustrating the host machine, VirtualBox 
 
 ## 2️⃣ Distribution Selection Justification
 
-Chosen Distribution: Ubuntu 22.04 LTS (Server VM)
+**Chosen Distribution:** Ubuntu 22.04 LTS (Server VM)
 
 Ubuntu 22.04 LTS was selected for the Server VM after comparing major Linux distribution families based on release model, stability, maintenance requirements, and package management.
 
@@ -57,7 +57,7 @@ Ubuntu 22.04 LTS provides long-term stability, predictable updates, and extensiv
 
 ## 3️⃣ Workstation Configuration Decision
 
-Operating System: Ubuntu (64-bit)
+**Operating System:** Ubuntu (64-bit)
 
 Ubuntu was selected for the Workstation VM to maintain consistency with the Server VM.
 
@@ -96,7 +96,7 @@ Server VM: 25 GB
 Storage is allocated based on expected workload, ensuring sufficient space for system files and future installations.
 
 ## 5️⃣ Network Configuration and Resource Isolation
-Network Type: Host-Only Adapter
+**Network Type:** Host-Only Adapter
 
 Both virtual machines are connected using a VirtualBox Host-Only network.
 
