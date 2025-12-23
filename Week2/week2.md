@@ -4,13 +4,13 @@
 
 This journal entry documents the design and validation of a security baseline and a performance testing methodology for the virtualised operating system environment established in Week 1. The objective of this phase is to ensure that the Server Virtual Machine (VM) operates securely while supporting controlled remote performance monitoring from the Workstation VM.
 
-Environment Overview
+## Environment Overview
 
 - Server VM: Ubuntu Linux — 192.168.56.10
 
 - Workstation VM: Ubuntu Linux — 192.168.56.11
 
-Network Configuration: VirtualBox Host-Only Adapter (isolated private network)
+- Network Configuration: VirtualBox Host-Only Adapter (isolated private network)
 
 This configuration provides strong network isolation while allowing secure inter-VM communication.
 
@@ -97,6 +97,6 @@ The following threat model identifies realistic security threats relevant to the
 | Malware or compromised packages | Loss of system integrity            | Automatic updates and trusted repositories |
 | Network-based attacks           | Service disruption or data exposure | Host-only network isolation                |
 
-Conclusion
+## Conclusion
 
 Week 2 focused on establishing a secure and manageable server environment supported by a structured performance testing methodology. Secure remote access via SSH, active firewall enforcement, mandatory access control, and network isolation collectively strengthen the system’s security posture. Performance monitoring confirms efficient resource utilisation and provides a reliable baseline for detecting abnormal behaviour in future system operations.
