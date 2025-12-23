@@ -122,7 +122,7 @@ IP Addressing Scheme
 
 System specifications were gathered using standard Linux command-line utilities.
 
-Server VM
+**Server VM**
 
 uname -a – Confirms kernel version and architecture
 
@@ -134,7 +134,7 @@ df -h – Displays file system usage
 
 ip addr – Confirms network interface and IP configuration
 
-Workstation VM
+**Workstation VM**
 
 uname -a – Confirms GNU/Linux system
 
@@ -148,7 +148,7 @@ ip addr – Confirms correct network addressing
 
 These commands demonstrate effective operating system resource management and configuration verification.
 
-Conclusion
+## Conclusion
 
-Week 1 focused on planning and designing a secure, efficient, and well-structured virtualised operating system environment. Through careful distribution selection, consistent workstation configuration, balanced resource allocation, and network isolation, the system establishes a strong foundation for security enforcement and performance monitoring in subsequent weeks. This foundation enables systematic security hardening and performance evaluation in subsequent weeks of the coursework.
+Week 1 focused on planning and designing a secure, efficient, and well-structured virtualised operating system environment. Through careful distribution selection, consistent workstation configuration, balanced resource allocation, and network isolation, the system establishes a strong foundation for security enforcement and performance monitoring in subsequent weeks of the coursework.
  
