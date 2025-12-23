@@ -1,4 +1,5 @@
-Week 1: System Planning and Distribution Selection
+🧱Week 1: System Planning and Distribution Selection
+
 Phase 1: System Planning and Distribution Selection
 
 This journal entry documents the planning and design of a virtualised operating system environment. The objective of this phase is to select appropriate Linux distributions, define system architecture, allocate resources efficiently, and configure a secure and isolated network environment suitable for experimentation and learning.
@@ -9,7 +10,7 @@ A Server Virtual Machine
 
 A Workstation Virtual Machine
 
-1. System Architecture Overview
+1️⃣ System Architecture Overview
 
 The system architecture consists of a single host machine running Oracle VirtualBox as a Type-2 hypervisor. Two guest virtual machines are deployed on top of the host system and connected using a Host-Only network adapter.
 
@@ -25,12 +26,14 @@ Figure 1: System architecture diagram illustrating the host machine, VirtualBox 
 
  ![System architecture design](../images/week1/sys-design.png)
 
-2. Distribution Selection Justification
+2️⃣ Distribution Selection Justification
+
 Chosen Distribution: Ubuntu 22.04 LTS (Server VM)
 
 Ubuntu 22.04 LTS was selected for the Server VM after comparing major Linux distribution families based on release model, stability, maintenance requirements, and package management.
 
 Comparison of Linux Distribution Families
+
 | Feature         | Debian Family (Ubuntu LTS) | Red Hat Family (RHEL, Fedora) | SUSE Family     | Arch Family |
 |-----------------|----------------------------|-------------------------------|-----------------|-------------|
 | Release Model   | Fixed (LTS)                | Fixed                         | Fixed / Rolling | Rolling     |
@@ -51,7 +54,8 @@ Sustainability: Efficient resource utilisation reduces energy consumption.
 
 Community Support: Extensive documentation simplifies configuration and troubleshooting.
 
-3. Workstation Configuration Decision
+3️⃣ Workstation Configuration Decision
+
 Operating System: Ubuntu (64-bit)
 
 Ubuntu was selected for the Workstation VM to maintain consistency with the Server VM.
@@ -64,7 +68,8 @@ Ubuntu provides full access to GNU command-line utilities required for system na
 
 The shared OS ecosystem reduces administrative complexity and learning overhead.
 
-4. Resource Allocation and System Configuration
+4️⃣ Resource Allocation and System Configuration
+
 Memory Allocation
 
 2048 MB RAM per VM
@@ -89,7 +94,7 @@ Server VM: 25 GB
 
 Storage is allocated based on expected workload, ensuring sufficient space for system files and future installations.
 
-5. Network Configuration and Resource Isolation
+5️⃣ Network Configuration and Resource Isolation
 Network Type: Host-Only Adapter
 
 Both virtual machines are connected using a VirtualBox Host-Only network.
@@ -105,13 +110,14 @@ Secure inter-VM and host-to-VM communication
 This configuration enhances security by isolating the lab environment from external threats while allowing controlled internal communication.
 
 IP Addressing Scheme
+
 | System | Role | IP Address | Interface |
 |-------|------|------------|-----------|
 | Server VM | Service host | 192.168.56.10 | enp0s3 |
 | Workstation VM | Client / Admin | 192.168.56.11 | enp0s3 |
 
 
-6. System Specification Documentation (CLI Evidence)
+6️⃣ System Specification Documentation (CLI Evidence)
 
 System specifications were gathered using standard Linux command-line utilities.
 

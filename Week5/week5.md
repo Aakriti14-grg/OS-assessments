@@ -1,4 +1,5 @@
 🌐 Week 5: Network Configuration Fundamentals
+
 Phase 5 – Network Configuration, Performance, and Communication Models
 
 This week focuses on understanding how networks are configured, how data moves across networks, and how system performance is influenced by network design. The concepts discussed form the foundation for secure, efficient, and scalable system communication.
@@ -32,6 +33,7 @@ Standardisation – enables vendor interoperability
 Simplified troubleshooting – faults can be isolated to specific layers
 
 OSI Model Overview
+
 | Layer | Name         | Function                     | Example         |
 | ----- | ------------ | ---------------------------- | --------------- |
 | 7     | Application  | End-user network services    | HTTP, FTP, SMTP |
@@ -58,6 +60,7 @@ Public vs Private IP Addresses
 Private IP addressing improves security by isolating internal systems from direct internet exposure.
 
 IPv4 vs IPv6 Comparison
+
 | Feature       | IPv4           | IPv6           |
 | ------------- | -------------- | -------------- |
 | Address size  | 32-bit         | 128-bit        |
@@ -72,6 +75,7 @@ IPv6 addresses the scalability and security limitations of IPv4.
 Network performance directly impacts system responsiveness and user experience.
 
 Key Metrics
+
 | Metric      | Description                        |
 | ----------- | ---------------------------------- |
 | Bandwidth   | Maximum data transfer rate         |
@@ -93,6 +97,7 @@ These tools support performance monitoring and troubleshooting.
 5️⃣ Network Services and System Integration
 
 Core network services work together to ensure seamless communication.
+
 | Service        | Role                                  |
 | -------------- | ------------------------------------- |
 | DHCP           | Automatically assigns IP addresses    |

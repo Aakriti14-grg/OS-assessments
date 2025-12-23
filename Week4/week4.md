@@ -1,4 +1,5 @@
-🔐 Week 4: Security Auditing and System Hardening
+🛡️ Week 4: Security Auditing and System Hardening
+
 Phase 4 – Security Auditing with Automated Tools
 
 This phase focuses on evaluating the security posture of the Linux Server VM using automated security auditing concepts and applying system hardening strategies. Security auditing plays a vital role in identifying vulnerabilities, misconfigurations, and weak security controls before they can be exploited.
@@ -42,6 +43,7 @@ Enhances isolation in a lab environment
 In a production environment, this limitation could be mitigated by temporarily enabling controlled outbound access (e.g. NAT) or by using an internal package repository.
 
 Figure 1: Security Auditing Limitation Evidence
+
 ![update](../images/week4/update.png)
 
 
@@ -50,6 +52,7 @@ Figure 1: Attempted installation of the Lynis security auditing tool failed due 
 4️⃣ Identified Security Risks
 
 Based on security auditing principles, the following high-risk areas were identified:
+
 | Issue                         | Risk                    | Impact                   |
 | ----------------------------- | ----------------------- | ------------------------ |
 | Root login via SSH            | Brute-force compromise  | Full system takeover     |
@@ -63,6 +66,7 @@ These risks highlight the importance of proactive system hardening.
 SSH Hardening
 
 SSH is a common attack vector for Linux servers. To mitigate this risk, SSH access was hardened using secure configuration controls.
+
 | Control                | Configuration               | Security Benefit                     |
 | ---------------------- | --------------------------- | ------------------------------------ |
 | Disable root login     | `PermitRootLogin no`        | Prevents direct superuser compromise |
@@ -70,6 +74,7 @@ SSH is a common attack vector for Linux servers. To mitigate this risk, SSH acce
 | Enforce key-based auth | SSH key pairs               | Strong cryptographic authentication  |
 
 Figure 2: SSH Hardening Configuration
+
 ![ssh_hardening](../images/week4/ssh_hardening.png)
 
 Figure 2: SSH hardening configuration showing disabled root login and password-based authentication, reducing exposure to brute-force and privilege escalation attacks.
@@ -77,6 +82,7 @@ Figure 2: SSH hardening configuration showing disabled root login and password-b
 6️⃣ User Privilege and Access Control
 
 The system enforces the principle of least privilege to reduce misuse of administrative permissions.
+
 | Control         | Implementation      | Benefit                              |
 | --------------- | ------------------- | ------------------------------------ |
 | Sudo access     | `/etc/sudoers`      | Controlled administrative privileges |
@@ -86,6 +92,7 @@ The system enforces the principle of least privilege to reduce misuse of adminis
 7️⃣ Defense-in-Depth Strategy
 
 Security controls are implemented across multiple layers:
+
 | Layer          | Security Controls                 |
 | -------------- | --------------------------------- |
 | Network        | UFW firewall, Host-Only isolation |
