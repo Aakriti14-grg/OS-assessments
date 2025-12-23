@@ -1,4 +1,4 @@
-##🧱Week 1: System Planning and Distribution Selection
+## 🧱Week 1: System Planning and Distribution Selection
 
 ##Phase 1: System Planning and Distribution Selection
 
@@ -10,7 +10,7 @@ A Server Virtual Machine
 
 A Workstation Virtual Machine
 
-##1️⃣ System Architecture Overview
+## 1️⃣ System Architecture Overview
 
 The system architecture consists of a single host machine running Oracle VirtualBox as a Type-2 hypervisor. Two guest virtual machines are deployed on top of the host system and connected using a Host-Only network adapter.
 
@@ -26,7 +26,7 @@ Figure 1: System architecture diagram illustrating the host machine, VirtualBox 
 
  ![System architecture design](../images/week1/sys-design.png)
 
-##2️⃣ Distribution Selection Justification
+## 2️⃣ Distribution Selection Justification
 
 Chosen Distribution: Ubuntu 22.04 LTS (Server VM)
 
@@ -55,7 +55,7 @@ Ubuntu 22.04 LTS provides long-term stability, predictable updates, and extensiv
 - **Community Support:** Extensive documentation simplifies configuration and troubleshooting.
 
 
-##3️⃣ Workstation Configuration Decision
+## 3️⃣ Workstation Configuration Decision
 
 Operating System: Ubuntu (64-bit)
 
@@ -69,7 +69,7 @@ Ubuntu provides full access to GNU command-line utilities required for system na
 
 The shared OS ecosystem reduces administrative complexity and learning overhead.
 
-##4️⃣ Resource Allocation and System Configuration
+## 4️⃣ Resource Allocation and System Configuration
 
 Memory Allocation
 
@@ -95,7 +95,7 @@ Server VM: 25 GB
 
 Storage is allocated based on expected workload, ensuring sufficient space for system files and future installations.
 
-##5️⃣ Network Configuration and Resource Isolation
+## 5️⃣ Network Configuration and Resource Isolation
 Network Type: Host-Only Adapter
 
 Both virtual machines are connected using a VirtualBox Host-Only network.
@@ -118,7 +118,7 @@ IP Addressing Scheme
 | Workstation VM | Client / Admin | 192.168.56.11 | enp0s3 |
 
 
-##6️⃣ System Specification Documentation (CLI Evidence)
+## 6️⃣ System Specification Documentation (CLI Evidence)
 
 System specifications were gathered using standard Linux command-line utilities.
 
