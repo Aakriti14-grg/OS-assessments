@@ -59,13 +59,13 @@ Figure 1: Secure SSH Connection
 
 ![ssh aakriti@192.168.56.10](../images/week2/ssh.png)
 
-Figure 1: Successful SSH connection from the Workstation VM to the Server VM (192.168.56.10), confirming encrypted remote administration access.
+**Figure 1:** Successful SSH connection from the Workstation VM to the Server VM (192.168.56.10), confirming encrypted remote administration access.
 
 Figure 2: Real-Time Performance Monitoring Using htop
 
 ![htop](../images/week2/htop.png)
 
-Figure 2: Real-time performance monitoring using htop over an active SSH session. The output shows low CPU utilisation, stable memory usage, and no swap activity, indicating efficient resource allocation and absence of performance bottlenecks.
+**Figure 2:** Real-time performance monitoring using htop over an active SSH session. The output shows low CPU utilisation, stable memory usage, and no swap activity, indicating efficient resource allocation and absence of performance bottlenecks.
 
 ## 2️⃣ Security Configuration Checklist
 
@@ -85,7 +85,7 @@ Figure 3: Firewall Status Verification (UFW)
 ![ufw](../images/week2/ufw.png)
 
 
-Figure 3: UFW firewall status showing an active firewall configuration with SSH (port 22) explicitly allowed, enforcing secure network access control.
+**Figure 3:** UFW firewall status showing an active firewall configuration with SSH (port 22) explicitly allowed, enforcing secure network access control.
 
 ## 3️⃣ Threat Model and Mitigation Strategies
 
