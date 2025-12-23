@@ -1,6 +1,6 @@
 ## 🧱Week 1: System Planning and Distribution Selection
 
-##Phase 1: System Planning and Distribution Selection
+## Phase 1: System Planning and Distribution Selection
 
 This journal entry documents the planning and design of a virtualised operating system environment. The objective of this phase is to select appropriate Linux distributions, define system architecture, allocate resources efficiently, and configure a secure and isolated network environment suitable for experimentation and learning.
 
