@@ -1,30 +1,30 @@
-🔐Week 2: Security Planning and Performance Testing Methodology
+## 🔐Week 2: Security Planning and Performance Testing Methodology
 
-Phase 2: Security Planning and Testing Methodology
+## Phase 2: Security Planning and Testing Methodology
 
 This journal entry documents the design and validation of a security baseline and a performance testing methodology for the virtualised operating system environment established in Week 1. The objective of this phase is to ensure that the Server Virtual Machine (VM) operates securely while supporting controlled remote performance monitoring from the Workstation VM.
 
 Environment Overview
 
-Server VM: Ubuntu Linux — 192.168.56.10
+- Server VM: Ubuntu Linux — 192.168.56.10
 
-Workstation VM: Ubuntu Linux — 192.168.56.11
+- Workstation VM: Ubuntu Linux — 192.168.56.11
 
 Network Configuration: VirtualBox Host-Only Adapter (isolated private network)
 
 This configuration provides strong network isolation while allowing secure inter-VM communication.
 
-1️⃣ Performance Testing Plan and Remote Monitoring
+## 1️⃣ Performance Testing Plan and Remote Monitoring
 
-Purpose
+**Purpose**
 
 The purpose of this performance testing plan is to evaluate CPU utilisation, memory usage, process behaviour, and system stability of the Server VM under normal operating conditions.
 
-Remote Monitoring Methodology
+**Remote Monitoring Methodology**
 
 Performance monitoring is conducted remotely from the Workstation VM using Secure Shell (SSH). This mirrors real-world system administration practices, where servers are managed remotely rather than through direct console access.
 
-Tools Used
+**Tools Used**
 
 | Tool           | Purpose                                     |
 | -------------- | ------------------------------------------- |
@@ -33,19 +33,20 @@ Tools Used
 | `ps aux`       | Process identification and PID verification |
 | `df -h`        | Disk usage and filesystem monitoring        |
 
-Testing Approach
+**Testing Approach**
 
-Establish a secure SSH session from the Workstation VM to the Server VM
+- Establish a secure SSH session from the Workstation VM to the Server VM
 
-Monitor CPU usage during idle operation
+- Monitor CPU usage during idle operation
 
-Observe memory consumption and verify minimal swap usage
+- Observe memory consumption and verify minimal swap usage
 
-Identify potential system bottlenecks
+- Identify potential system bottlenecks
 
-Confirm stable and responsive system behaviour
+- Confirm stable and responsive system behaviour
 
-Key Performance Indicators (KPIs)
+**Key Performance Indicators (KPIs)**
+
 | KPI                 | Description                              |
 | ------------------- | ---------------------------------------- |
 | CPU Utilisation     | Percentage of CPU usage during operation |
@@ -66,7 +67,7 @@ Figure 2: Real-Time Performance Monitoring Using htop
 
 Figure 2: Real-time performance monitoring using htop over an active SSH session. The output shows low CPU utilisation, stable memory usage, and no swap activity, indicating efficient resource allocation and absence of performance bottlenecks.
 
-2️⃣ Security Configuration Checklist
+## 2️⃣ Security Configuration Checklist
 
 A security baseline was implemented on the Server VM to minimise the attack surface and enforce controlled administrative access.
 
@@ -86,7 +87,7 @@ Figure 3: Firewall Status Verification (UFW)
 
 Figure 3: UFW firewall status showing an active firewall configuration with SSH (port 22) explicitly allowed, enforcing secure network access control.
 
-3️⃣ Threat Model and Mitigation Strategies
+## 3️⃣ Threat Model and Mitigation Strategies
 
 The following threat model identifies realistic security threats relevant to the virtualised server environment and outlines appropriate mitigation strategies.
 
