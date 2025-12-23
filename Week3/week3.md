@@ -1,109 +1,81 @@
-🧪  Week 3: Application Selection for Performance Testing
+## 🧪  Week 3: Application Selection for Performance Testing
 
-Phase 3 – Performance Evaluation Preparation
+## Phase 3: Performance Testing Tool Selection and Justification
 
+This journal entry documents the selection of appropriate applications and benchmarking tools for evaluating system performance in later phases of the coursework. The objective of this phase is to identify representative workloads that allow controlled, repeatable, and meaningful performance analysis of CPU, memory, storage, and network subsystems.
 
-1️⃣ Application Selection Matrix
+## 1️⃣ Purpose of Application Selection
 
-The following applications were selected to represent different workload types. Each application stresses a specific system resource, enabling meaningful performance evaluation across CPU, memory, disk I/O, network, and server workloads.
+Performance testing requires carefully chosen tools that can:
+
+- Generate predictable and repeatable workloads
+
+- Isolate specific system resources (CPU, memory, disk, network)
+
+- Reflect real-world server usage patterns
+
+- Provide measurable and interpretable results
+
+Rather than performing testing immediately, this phase focuses on planning and justification, ensuring that later measurements are methodologically sound.
+
+## 2️⃣ Workload Categories
+
+To evaluate system performance comprehensively, workloads are categorised based on the primary resource they stress.
+
+| Workload Category    | Target Resource    | Purpose                             |
+| -------------------- | ------------------ | ----------------------------------- |
+| CPU-intensive        | Processor          | Evaluate scheduling and utilisation |
+| Memory-intensive     | RAM & swap         | Observe memory pressure behaviour   |
+| I/O-intensive        | Storage            | Measure disk throughput and latency |
+| Network-intensive    | Network stack      | Assess bandwidth and connectivity   |
+| Application workload | Multiple resources | Simulate real server usage          |
+
+This categorisation ensures balanced system evaluation.
+
+3️⃣ Selected Applications and Tools
+
+The following tools were selected based on reliability, industry usage, and suitability for controlled testing.
 
 | Workload Type      | Application      | Purpose                     | Justification                                                                        |
-|--------------------|------------------|-----------------------------|--------------------------------------------------------------------------------------|
+| ------------------ | ---------------- | --------------------------- | ------------------------------------------------------------------------------------ |
 | CPU-Intensive      | `stress-ng`      | CPU stress testing          | Generates controlled CPU load to evaluate scheduling efficiency and CPU utilisation  |
 | RAM-Intensive      | `stress-ng` (vm) | Memory stress testing       | Allocates and frees memory aggressively to test RAM pressure and swapping behaviour  |
 | I/O-Intensive      | `fio`            | Disk I/O benchmarking       | Simulates real-world read/write workloads and measures throughput, latency, and IOPS |
-| Network-Intensive  | `iperf3`         | Network performance testing | Measures bandwidth, packet loss, and network throughput between VMs                  |
-| Server Application | `nginx`          | Lightweight web server      | Represents a real server workload handling concurrent client requests                |
-   |
+| Network-Intensive  | `iperf3`         | Network performance testing | Measures bandwidth, packet loss, and network throughput between virtual machines     |
+| Server Application | `nginx`          | Lightweight web server      | Represents a realistic server workload handling concurrent client requests           |
 
-These applications collectively cover CPU, Memory, Storage, Network, and Server-side workloads, providing a balanced and realistic performance testing environment.
+These tools collectively allow focused testing of individual subsystems as well as integrated system behaviour.
 
+## 4️⃣ Justification for Tool Selection
 
-2️⃣ Installation Documentation (SSH-based)
+**CPU and Memory Testing**
 
-All installations are performed remotely via SSH from the Workstation VM to the Server VM, simulating real-world system administration.
+stress-ng was selected due to its fine-grained workload control and ability to target specific system components. It enables reproducible CPU and memory stress scenarios while maintaining predictable execution.
 
-ssh aakriti@192.168.56.10
+**Storage Performance Testing**
 
-Install CPU & Memory Stress Tool
+fio is widely used for storage benchmarking and allows flexible configuration of read/write patterns, block sizes, and concurrency levels, making it suitable for realistic disk performance evaluation.
 
-sudo apt update
-sudo apt install stress-ng -y
+**Network Performance Testing**
 
-Install Disk I/O Benchmark Tool
+iperf3 provides accurate measurement of network throughput and is commonly used in enterprise environments. It allows direct performance testing between the Server and Workstation virtual machines.
 
-sudo apt install fio -y
+**Application-Level Testing**
 
-Install Network Performance Tool
+nginx was selected as a lightweight and widely deployed web server. It represents a realistic server workload that combines CPU usage, memory allocation, disk access, and network communication.
 
-sudo apt install iperf3 -y
+## 5️⃣ Testing Scope and Methodology Alignment
 
-Install Server Application (Nginx)
-sudo apt install nginx -y
+At this stage, no performance testing is executed. The focus remains on:
 
+- Tool selection and justification
 
-3️⃣ Expected Resource Profiles
+- Alignment with performance metrics defined in Week 2
 
-This section documents the anticipated system behaviour for each workload before testing begins.
+- Preparation for controlled execution in Weeks 6 and 7
 
-| Application          | CPU Usage | Memory Usage | Disk I/O  | Network   | Expected Behaviour                          |
-| -------------------- | --------- | ------------ | --------- | --------- | ------------------------------------------- |
-| `stress-ng` (CPU)    | Very High | Low          | Minimal   | None      | CPU cores reach near-100% utilisation       |
-| `stress-ng` (Memory) | Medium    | Very High    | Low       | None      | Increased RAM usage, possible swap activity |
-| `fio`                | Medium    | Low          | Very High | None      | High disk throughput and IOPS               |
-| `iperf3`             | Low       | Low          | None      | Very High | Network bandwidth saturation                |
-| `nginx`              | Medium    | Medium       | Low       | Medium    | Stable multi-request handling               |
+This separation between planning and execution ensures clarity, reproducibility, and academic rigour.
 
+## Conclusion
 
-4️⃣ Monitoring Strategy
-
-Each application is monitored using resource-specific tools to accurately measure performance impact.
-
-CPU & Memory Monitoring
-
-htop
-free -h
-
-Tracks CPU utilisation, process scheduling, and memory consumption
-Identifies CPU bottlenecks and memory pressure
-
-
-Disk I/O Monitoring
-
-iostat -xz 1
-vmstat 1
-
-Measures disk throughput, I/O wait time, and queue depth
-Identifies storage bottlenecks
-
-
-Network Monitoring
-
-iperf3 -s   # Server
-iperf3 -c 192.168.56.10   # Client
-
-Measures bandwidth, jitter, and packet loss
-
-Server Monitoring
-
-systemctl status nginx
-curl http://localhost
-
-Verifies service availability and responsiveness
-
-
-5️⃣ Performance Testing Rationale
-
-This testing approach follows operating system performance principles:
-
-CPU Scheduling → stress-ng validates fair scheduling and utilisation
-
-Memory Management → memory stress tests observe swap and caching
-
-File System Performance → fio evaluates I/O latency and throughput
-
-Network Stack Efficiency → iperf3 validates bandwidth handling
-
-Real-World Server Load → nginx represents production-like services
-
-This ensures holistic system evaluation, aligning with OS resource management concepts.
+Week 3 established a structured and justified selection of applications and benchmarking tools for performance evaluation. By categorising workloads and choosing industry-relevant tools, the system is prepared for controlled performance measurement and optimisation in subsequent weeks. This planning phase ensures that later performance results are meaningful, comparable, and analytically valid.
