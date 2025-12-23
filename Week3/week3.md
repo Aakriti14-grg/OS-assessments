@@ -1,4 +1,4 @@
-## 🧪  Week 3: Application Selection for Performance Testing
+## 🧪 Week 3: Application Selection for Performance Testing
 
 ## Phase 3: Performance Testing Tool Selection and Justification
 
@@ -8,13 +8,10 @@ This journal entry documents the selection of appropriate applications and bench
 
 Performance testing requires carefully chosen tools that can:
 
-- Generate predictable and repeatable workloads
-
-- Isolate specific system resources (CPU, memory, disk, network)
-
-- Reflect real-world server usage patterns
-
-- Provide measurable and interpretable results
+- Generate predictable and repeatable workloads  
+- Isolate specific system resources (CPU, memory, disk, network)  
+- Reflect real-world server usage patterns  
+- Provide measurable and interpretable results  
 
 Rather than performing testing immediately, this phase focuses on planning and justification, ensuring that later measurements are methodologically sound.
 
@@ -50,29 +47,27 @@ These tools collectively allow focused testing of individual subsystems as well 
 
 **CPU and Memory Testing**
 
-'stress-ng' was selected due to its fine-grained workload control and ability to target specific system components. It enables reproducible CPU and memory stress scenarios while maintaining predictable execution.
+`stress-ng` was selected due to its fine-grained workload control and ability to target specific system components. It enables reproducible CPU and memory stress scenarios while maintaining predictable execution.
 
 **Storage Performance Testing**
 
-'fio' is widely used for storage benchmarking and allows flexible configuration of read/write patterns, block sizes, and concurrency levels, making it suitable for realistic disk performance evaluation.
+`fio` is widely used for storage benchmarking and allows flexible configuration of read/write patterns, block sizes, and concurrency levels, making it suitable for realistic disk performance evaluation.
 
 **Network Performance Testing**
 
-'iperf3' provides accurate measurement of network throughput and is commonly used in enterprise environments. It allows direct performance testing between the Server and Workstation virtual machines.
+`iperf3` provides accurate measurement of network throughput and is commonly used in enterprise environments. It allows direct performance testing between the Server and Workstation virtual machines.
 
 **Application-Level Testing**
 
-'nginx' was selected as a lightweight and widely deployed web server. It represents a realistic server workload that combines CPU usage, memory allocation, disk access, and network communication.
+`nginx` was selected as a lightweight and widely deployed web server. It represents a realistic server workload that combines CPU usage, memory allocation, disk access, and network communication.
 
 ## 5️⃣ Testing Scope and Methodology Alignment
 
-At this stage, no performance testing is executed at this stage. The focus remains on:
+At this stage, no performance testing is executed. The focus remains on:
 
-- Tool selection and justification
-
-- Alignment with performance metrics defined in Week 2
-
-- Preparation for controlled execution in Weeks 6 and 7
+- Tool selection and justification  
+- Alignment with performance metrics defined in Week 2  
+- Preparation for controlled execution in Weeks 6 and 7  
 
 This separation between planning and execution ensures clarity, reproducibility, and academic rigour.
 
