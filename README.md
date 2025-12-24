@@ -42,10 +42,12 @@ The project demonstrates system planning, security hardening, performance evalua
 
 ## 🎥 Coursework Video
 
-A short demonstration video accompanies this repository, explaining:
-- System architecture
-- Security and performance decisions
-- Observed behaviour and optimisation strategies
+A short demonstration video accompanies this repository and is submitted via the official assessment platform.  
+The video explains:
+- System architecture  
+- Security and performance decisions  
+- Observed system behaviour and optimisation strategies  
+
 
 ---
 
