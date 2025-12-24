@@ -1,5 +1,55 @@
-# Operating Systems Coursework
+# 🖥️ Operating Systems Coursework – CMPN202
 
-This repository contains weekly journals (Week 1–7) documenting the design, security, performance evaluation, and optimisation of a Linux-based virtualised system.
+This repository documents a structured operating systems coursework implemented across seven phases.  
+The project demonstrates system planning, security hardening, performance evaluation, and optimisation using a virtualised Linux environment.
 
-Each folder corresponds to a specific coursework phase.
+---
+
+## 📂 Repository Structure
+
+| Week | Title                                          | Focus Area                                   |
+|------|------------------------------------------------|----------------------------------------------|
+| Week 1 | System Planning and Distribution Selection   | VM architecture, OS selection, resource planning |
+| Week 2 | Security Planning and Performance Methodology| Security baseline, SSH, firewall, monitoring |
+| Week 3 | Application Selection for Performance Testing| Tool selection and workload justification   |
+| Week 4 | Security Auditing and System Hardening        | Auditing concepts, SSH hardening, defence-in-depth |
+| Week 5 | Network Configuration Fundamentals            | OSI model, IP addressing, network performance |
+| Week 6 | Performance Evaluation and Analysis           | Performance metrics, bottleneck analysis     |
+| Week 7 | Performance Optimisation and System Tuning    | Resource optimisation and trade-off analysis |
+
+---
+
+## 🧪 Environment Overview
+
+- **Hypervisor:** Oracle VirtualBox  
+- **Server VM:** Ubuntu Linux (Hardened)  
+- **Workstation VM:** Ubuntu Linux  
+- **Network Type:** Host-Only Adapter  
+- **Access Method:** Secure Shell (SSH)  
+
+---
+
+## 🔐 Key Concepts Demonstrated
+
+- Virtualisation and resource allocation  
+- Secure remote administration  
+- Linux security hardening  
+- Performance monitoring and analysis  
+- Network communication models  
+- Performance optimisation with security awareness  
+
+---
+
+## 🎥 Coursework Video
+
+A short demonstration video accompanies this repository, explaining:
+- System architecture
+- Security and performance decisions
+- Observed behaviour and optimisation strategies
+
+---
+
+## 📌 Author
+
+**Aakriti Gurung**  
+BSc (Hons) Computer Science  
