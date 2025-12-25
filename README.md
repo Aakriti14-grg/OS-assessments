@@ -55,4 +55,4 @@ The video explains:
 
 - Name: Aakriti Gurung  
 - Student ID: A00019245
-- Module: (CMP-N202-0)2 – Operating Systems
+- Module: (CMP-N202-0) – Operating Systems
