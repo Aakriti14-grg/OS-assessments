@@ -51,7 +51,8 @@ The video explains:
 
 ---
 
-## 📌 Author
+## Student Information
 
-**Aakriti Gurung**  
-BSc (Hons) Computer Science  
+- Name: Aakriti Gurung  
+- Student ID: A00019245
+- Module: (CMP-N202-0)2 – Operating Systems
